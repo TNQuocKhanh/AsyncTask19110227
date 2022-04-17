@@ -9,12 +9,13 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textViewHeading"
+        android:id="@+id/textViewStatus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/text_heading"
         android:padding="10dp"
-        android:textSize="20sp"
-        android:text="Napping..." />
+        android:textSize="24sp"
+        android:textAlignment="textStart" />
 
     <Button
         android:id="@+id/buttonStartTask"
@@ -23,10 +24,10 @@
         android:backgroundTint="@color/teal_200"
         android:textColor="#000000"
         android:textStyle="bold"
-        android:text="Start Task"
+        android:layout_marginVertical="50dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/button_start"
         android:paddingVertical="10dp"
-        android:layout_marginVertical="30dp"
-        android:layout_marginLeft="10dp"
         android:layout_gravity="top|start" />
 
     <ProgressBar
@@ -34,21 +35,11 @@
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
         android:layout_margin="10dp"
         android:indeterminate="false"
+        android:layout_gravity="bottom"
         android:progressBackgroundTint="@color/teal_200"
         app:layout_anchor="@id/buttonStartTask"
         app:layout_anchorGravity="bottom" />
-
-    <TextView
-        android:id="@+id/textViewShow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_anchor="@id/progressBar"
-        android:layout_gravity="bottom|center_horizontal"
-        app:layout_anchorGravity="bottom|center_horizontal"
-        android:textSize="20sp"
-        android:gravity="center_horizontal" />
 
 </LinearLayout>

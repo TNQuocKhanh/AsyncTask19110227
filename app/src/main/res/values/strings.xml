@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">AsyncTask19110227</string>
+    <string name="app_name">SimpleAsyncTask19110227</string>
+    <string name="text_heading">Napping...</string>
+    <string name="text_working">Working...</string>
+    <string name="button_start">Start Task</string>
+    <string name="text_complete">Finish.</string>
 </resources>
